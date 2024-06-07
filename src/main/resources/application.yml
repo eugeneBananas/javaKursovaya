@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: laundry
+  datasource:
+    url: jdbc:postgresql://localhost:5432/laundry
+    username: postgres
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
